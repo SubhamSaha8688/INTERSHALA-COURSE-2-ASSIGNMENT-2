@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="name">Subham Saha</div>
+      <nav>
+        <input type="checkbox" id="nav_toggle" class="nav_toggle">
+        <label for="nav_toggle" class="nav_toggle_label">
+          <span></span>
+        </label>
+        <ul class="nav_links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <li><a href="#RecentBlogs">Recent Blogs</a></li>
+            </li>
+            <li>
+                <a href="#About">About</a>
+            </li>
+            <li>
+                <a href="#QueryForm">Query</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+        </ul>
+        
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="my_title">My Travel Blog</h1>
+      <section class="intro_section">
+        <p class="intro">
+          Welcome to my travel blog!.I am <em>Subham Saha</em>, a gradutate
+          student of <strong>Lovely Professional University</strong> this blog
+          Will showcase my travel adventure And photograph and insight from my
+          journey. Lets Eplore The journey Together
+        </p>
+      </section>
+
+      <section id="RecentBlogs" class="blog_posts">
+        <h2 class="topics">
+            Recent Blogs
+        </h2>
+<div class="posts_container">
+        
+        <article id="post1" class="post">
+          <h3 id="GoldenTemple" class="post_title">
+            A Golden Glimpse of Spirituality: Exploring the Golden Temple
+          </h3>
+          
+          <p class="intro">
+            Discover the breathtaking beauty and profound spiritual significance
+            of the Golden Temple, a sacred Sikh shrine nestled in the heart of
+            Amritsar, India. Immerse yourself in the serene ambiance of the holy
+            pool, witness the mesmerizing rituals, and experience the warmth and
+            hospitality of the Sikh community.
+          </p>
+          <figure class="image">
+            <img 
+              src="images/GoldenTemple.jpg"
+              alt="Golden Temple"
+              
+            />
+          </figure>
+          <section class="post_content">
+            <ul>
+              <li>
+                Bow down before the holy book, the central scripture of Sikhism.
+              </li>
+              <li>
+                Witness the grand procession of the Guru Granth Sahib,
+                accompanied by hymns and prayers.
+              </li>
+              <li>
+                Immerse yourself in the divine music of Sikh hymns, sung by
+                devotional singers.
+              </li>
+              <li>
+                Find a quiet spot within the complex to meditate and connect
+                with your inner self.
+              </li>
+            </ul>
+          </section>
+          <figure class="video">
+            <video
+            controls
+            loop
+            autoplay
+            src="videos/GoldenTemple.mp4"
+            
+          ></video>
+          </figure>
+          
+        </article>
+
+        <article id="post2" class="post">
+          <h3 id="GolcondaFort" class="post_title">
+            Golconda Fort: A Majestic Glimpse into History
+          </h3>
+          <br>
+          <p class="intro">
+            I recently had the privilege of exploring the majestic Golconda
+            Fort, a testament to the grandeur of the Qutb Shahi dynasty. As I
+            stepped through the imposing Fateh Darwaza, I was transported back
+            in time, immersing myself in the rich history and architectural
+            marvels of this iconic fortress.
+          </p>
+          <figure class="image">
+            <img 
+              src="images/GolcondaFort.jpg"
+              alt="Golconda Fort"
+              
+            />
+          </figure>
+          <section class="post_content">
+            <ul>
+              <li>
+                Stepped through the imposing Fateh Darwaza, the main gateway to
+                the fort.
+              </li>
+              <li>
+                Experienced the incredible acoustics of the fort, clapping near
+                the dome entrance and hearing the echo travel a great distance.
+              </li>
+              <li>
+                Climbed to the hilltop pavilion for breathtaking views of
+                Hyderabad.
+              </li>
+              <li>
+                Explored local markets near the fort, purchasing unique
+                handicrafts and souvenirs.
+              </li>
+            </ul>
+          </section>
+          <figure class="video">
+            <video
+            controls
+            loop
+            autoplay
+            src="videos/GolcondaFort.mp4"
+            
+          ></video>
+          </figure>
+          
+        </article>
+      </div>
+      </section>
+
+      
+      
+      <article id="About" class="section">
+        <h2 class="topics">About </h2>
+        <p class="intro">
+          Subham Saha, a graduate student of Lovely Professional University. i am also passionate about traveling and exploring different cultures and has takena keen interest in learning about historical events, myths, and legends.
+        </p>
+  
+    </article>
+
+    <article id="QueryForm" class="section query_container">
+    <h2 class="topics" >Any Query</h2>
+        <section class=" query">
+            
+            <form action="" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" >
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+        </section>
+        </article>
+
+        <article id="Contact" class="section">
+
+        <h2  class="topics">Contact</h2>
+        <p class="intro">
+          <strong>Email:</strong><a href="mailto:saha88979@gmail.com">saha88979@gmail.com</a>
+           <br />
+          <strong>Address:</strong> Hyderabad , telangana,  India
+        </p>
+
+    </article>
+
+    </main>
+
+    <footer>
+      <div class="social">
+        <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="images/pinterest.svg" alt="Pinterest" /></a>
+      </div>
+      <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

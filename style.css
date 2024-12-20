@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    color: #333;
+  }
+  
+  header {
+    background-color: #d5d4d4;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_toggle {
+    display: none;
+  }
+  
+  .nav_toggle_label {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav_toggle_label span,
+  .nav_toggle_label span::before,
+  .nav_toggle_label span::after {
+    display: block;
+    background: #333;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav_toggle_label span::before,
+  .nav_toggle_label span::after {
+    content: '';
+    position: absolute;
+  }
+  
+  .nav_toggle_label span::before {
+    bottom: 7px;
+  }
+  
+  .nav_toggle_label span::after {
+    top: 7px;
+  }
+  
+  .nav_links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav_links li {
+    margin-left: 1rem;
+  }
+  
+  .nav_links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .my_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .intro {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .blog_posts {
+    margin-bottom: 2rem;
+  }
+  
+  .posts_container {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  .post_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .image, .video {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .image img, .video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .post-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .topics {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    text-align: center;
+  }
+  
+  .query_container {
+    margin: 2rem 0;
+  }
+  
+  .query {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .query form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .query form label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .query form input,
+  .query form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .query form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .query form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav_toggle_label {
+      display: block;
+    }
+  
+    .nav_links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #f8f8f8;
+      padding: 1rem;
+    }
+  
+    .nav_toggle:checked ~ .nav_links {
+      display: flex;
+    }
+  
+    .nav_links li {
+      margin: 0.5rem 0;
+    }
+  
+    .my_title {
+      font-size: 2rem;
+    }
+  
+    .posts_container {
+      grid-template-columns: 1fr;
+    }
+  
+    .query {
+      padding: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .nav_links {
+      display: flex;
+    }
+  
+    .my_title {
+      font-size: 3.5rem;
+    }
+  
+    .posts_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .query {
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .my_title {
+      font-size: 4rem;
+    }
+  
+    .intro {
+      font-size: 1.25rem;
+    }
+  
+    .post_title {
+      font-size: 2rem;
+    }
+  }
+  
+  
